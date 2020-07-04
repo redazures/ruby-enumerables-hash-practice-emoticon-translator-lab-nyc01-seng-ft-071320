@@ -1,5 +1,6 @@
 # require modules here
 require "yaml"
+<<<<<<< HEAD
 require 'pry'
 
 # file=YAML.load_file('./lib/emoticons.yml')
@@ -27,6 +28,16 @@ def load_library(file)
     new_hash[k]={eng=>v[0], yap=>v[1]}
   end
   new_hash
+=======
+
+
+
+def load_library(file)
+  # code goes here
+  file_path = YAML.load_file('./lib/emoticons.yml')
+  p file_path
+  # p x
+>>>>>>> bd0653017b417c887b476a5d6adc170c42126b20
 end
 
 # x= load_library('./lib/emoticons.yml')
@@ -71,5 +82,9 @@ def get_japanese_emoticon(file,emotion)
   answer
 end
 
+<<<<<<< HEAD
  p get_japanese_emoticon('./lib/emoticons.yml',":)")
 #(＾ｖ＾)
+=======
+load_library()
+>>>>>>> bd0653017b417c887b476a5d6adc170c42126b20
